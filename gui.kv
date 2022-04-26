@@ -1,0 +1,24 @@
+#:import FitImage kivymd.utils.fitimage
+
+<Screen>:
+    FitImage:
+        source: 'assets/bg.png'
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        pos_hint: {'center_x': .5, 'center_y': .5}
+
+        TextInput:
+            id: passwd_kv
+            size_hint: (1, None)
+            height: 30
+            multiline: False
+            text: ''
+
+        Button:
+            size_hint: (1, None)
+            height: 30
+            text: 'Generate'
+            on_release:
+                root.on_btn_release()
+
