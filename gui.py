@@ -18,7 +18,7 @@ class GuiApp(App):
     print(Window.size)
 
     def on_start(self, **kwargs):
-        # сразу при запуске выводит в лэйбл готовый пароль
+        # сразу при запуске выводит в лэйбл - готовый пароль
         self.root.ids.passwd_kv.text = get_cool_password()
 
     def build(self):
